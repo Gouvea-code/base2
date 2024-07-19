@@ -7,17 +7,18 @@ import com.base2.mantisbt.pages.MainPage;
 import com.base2.mantisbt.pages.ReportIssuePage;
 import com.base2.mantisbt.pages.ViewIssuePage;
 import com.base2.mantisbt.utils.TestData;
-import org.junit.jupiter.api.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
+import static org.testng.Assert.assertTrue;
+import static org.testng.AssertJUnit.assertEquals;
 
 public class CreateIssueTest extends BaseTest {
 

@@ -9,21 +9,17 @@ Java JDK: Versão 11 ou superior.</br>
 Maven: Para gerenciar as dependências do projeto.</br>
 Selenium WebDriver: Para automatizar as interações com o navegador.</br>
 ChromeDriver: Driver do Selenium para o navegador Chrome.</br>
+TestNG: Para executar os testes e gerar relatórios.</br>
+Allure: Para gerar relatórios mais detalhados e visuais dos testes.</br>
 
 
 # 🛠️ Configuração do Projeto
 Clonar o repositório: Clone este repositório para a sua máquina local.
 
-Instalar as dependências: Execute o comando mvn clean install na raiz do projeto para baixar e instalar as dependências do projeto.
+Instalar as dependências: Execute o comando **mvn clean install** na raiz do projeto para baixar e instalar as dependências do projeto.
 
-Configurar o ChromeDriver:
+# Executando os Testes
 
-Baixe o ChromeDriver da página oficial: https://chromedriver.chromium.org/downloads </br>
-Descompacte o arquivo e coloque o executável chromedriver.exe em um diretório de sua preferência.</br>
-Atualize o caminho para o ChromeDriver no arquivo WebDriverFactory.java:
-Java
-System.setProperty("webdriver.chrome.driver", "caminho/para/seu/chromedriver.exe");
+Para executar os testes, utilize o comando **mvn test**. Os resultados dos testes serão exibidos no console e um relatório será gerado na pasta target/surefire-reports.
 
-Executar os testes:
-
-Usando o Maven: Execute o comando mvn clean test na raiz do projeto.
+Para gerar o relatório do Allure, execute o comando **mvn allure:serve**. O relatório será aberto automaticamente em seu navegador.

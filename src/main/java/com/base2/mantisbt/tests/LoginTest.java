@@ -4,8 +4,11 @@ package com.base2.mantisbt.tests;
 import com.base2.mantisbt.BaseTest;
 import com.base2.mantisbt.pages.LoginPage;
 import com.base2.mantisbt.utils.TestData;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
+import org.testng.annotations.Test;
+
+import static org.testng.AssertJUnit.assertEquals;
+
+
 public class LoginTest extends BaseTest {
 
     @Test

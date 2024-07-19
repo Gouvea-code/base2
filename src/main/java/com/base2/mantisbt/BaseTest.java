@@ -1,19 +1,19 @@
 package com.base2.mantisbt;
 
 import com.base2.mantisbt.utils.WebDriverFactory;
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
     protected WebDriver driver;
 
-    @BeforeEach
+    @BeforeClass
     public void setUp() {
         driver = WebDriverFactory.createWebDriver("chrome"); // Ou "firefox"
     }
 
-    @AfterEach
+    @AfterClass
     public void tearDown() {
         if (driver != null) {
             driver.quit();
